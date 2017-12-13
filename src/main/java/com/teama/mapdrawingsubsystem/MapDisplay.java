@@ -28,6 +28,7 @@ public interface MapDisplay {
 
     String pointAt(Location loc);
     String lineAt(Location loc);
+    String imgAt(Location loc);
 
     String pathPointAt(Location loc);
 

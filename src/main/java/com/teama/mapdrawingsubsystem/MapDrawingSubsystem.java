@@ -1,7 +1,10 @@
 package com.teama.mapdrawingsubsystem;
 
 import com.teama.mapsubsystem.MapSubsystem;
-import com.teama.mapsubsystem.data.*;
+import com.teama.mapsubsystem.data.Floor;
+import com.teama.mapsubsystem.data.Location;
+import com.teama.mapsubsystem.data.MapEdge;
+import com.teama.mapsubsystem.data.MapNode;
 import com.teama.mapsubsystem.pathfinding.Path;
 import javafx.beans.value.ChangeListener;
 import javafx.event.EventHandler;
@@ -12,10 +15,8 @@ import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.scene.text.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -678,6 +678,11 @@ public class HospitalMapDisplay implements MapDisplay {
     }
 
     @Override
+    public String imgAt(Location loc) {
+        return null;
+    }
+
+    @Override
     public String pathPointAt(Location loc) {
         return null;
     }
@@ -954,9 +959,10 @@ public class HospitalMapDisplay implements MapDisplay {
             }
 
             // Remove the old annotations from this floor
-            for(Text t : textOnFloor.get(getCurrentFloor())) {
+            /*for(Text t : textOnFloor.get(getCurrentFloor())) {
                 textMap.remove(t.getId());
-            }
+            }*/
+            textMap = new HashMap<>();
 
             // Draw the annotations for this particular floor
             for(Text t : textOnFloor.get(getCurrentFloor())) {
